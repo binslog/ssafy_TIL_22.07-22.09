@@ -1,24 +1,43 @@
+# arr = [[0] * 4 for _ in range(3)]
+
+# def input_func():
+#     n = int(input())
+#     for i in range(4) :
+#         arr[i][j] += i
+#         for j in range(3):
+#             arr[i][j] += n + j
+#     return arr
+
+#     #arr 배열을 행우선 순회하면서 n부터 채우기
+
+# def process():
+#     for i in range(4):
+#         for j in range(3):
+#             arr[i][j] += 1
+#     return arr
 
 
-# n = int(input())
-# char = list(map(str,input().split()))
-# result=[]
-#
-# for i in range(n):
-#     result += char[i]
-#
-# result = ''.join(result)
-#
-# print(result)
-#
+# def output_func():
+    
+#     return arr
 
 
-num = list(map(str, input().split())) # [A, B, C]
-list = [0] * 17 # [0],[0],[0],[0],[0],....[0]
-print(list)
+# print(input_func)
 
-# for i in list :
-#     for j in range(7) :
-#         list[j] = num[i]
-#
-# print(list)
+# 3x4 전젹 배열 만들고
+
+# arr = [[0] * 4 for _ in range(3)]
+
+
+def input_func():
+    a,b = map(int,input().split())
+    return a, b
+    
+def output_func():
+    num = 5
+    
+    while num <= n1 + n2 :    
+        print(num,end='')
+
+
+print(output_func)
