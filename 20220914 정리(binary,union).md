@@ -1,9 +1,10 @@
-> binary search tree 
-```python
 
+
+> binary search tree 
+
+```python
 arr=[0]*20
 lst=[4,2,9,7,15,1,3]
-
 
 def insert(target):
     now=1
@@ -24,7 +25,7 @@ def search(target):
         else: now=now*2
 
 for i in range(len(lst)):
-    insert(lst[i])  # arr배열(트리)에 값 저장하는 함수
+    arr.insert(lst[i])  # arr배열(트리)에 값 저장하는 함수
 
 
 n=int(input())   # 숫자 하나 입력받고

@@ -1,18 +1,15 @@
+n=int(input())
+arr=[list(map(int,input().split())) for _ in range(n)]
 
-def Bbit_print(i):
-    output = ""
-    for j in range(7,-1,-1):
-        output += "1" if i & (1 << j) else "0"
-    print(output)
+name = [x for x in range(n)] # 받은 숫자로 숫자배열 하나 생성!
 
-a=0x10
-x=0x01020308
-print("%d= " % a,end=' ')
-Bbit_print(a)
-print()
-print("O%X = " % x, end='')
-for i in range(0,4):
-    Bbit_print((x>>i*8) & 0xff)
+answer=[]
+def dfs(now):
+    global answer
+    answer.append(name[now])
+    for i in range(n):
+        if arr[now][i]==1:
+            dfs(i)
 
-
-
+dfs(0)  # 0번 인덱스 부터 깊이우선 탐색 시작
+print(*answer)
